@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Search Interface</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#search">Search Recipes</a></li>
+                <li><a href="#favorites">Favorites</a></li>
+                <li><a href="#meal-planning">Meal Planning</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="BGimg">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fphotos%2Frecipes-background.html&psig=AOvVaw29W4eiFgP4wJS8HO4KWa8e&ust=1732688291003000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDnytKt-YkDFQAAAAAdAAAAABAE"/>
+        
+    </div>
+
+    <main>
+        <section id="search">
+            <h2>Search Recipes</h2>
+
+            <form id="search-form">
+                <input type="text" id="ingredients" placeholder="Ingredients">
+                <select id="cuisine">
+                    <option value="">Select Cuisine</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Mexican">Mexican</option>
+                    
+                </select>
+                <select id="diet">
+                    
+                    <option value="">Select Diet</option>
+                    <option value="Non-veg">Non-veg</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Gluten-Free">Gluten-Free</option>
+                    
+                </select>
+                <button type="submit">Search</button>
+            </form>
+
+            <div id="search-results"></div>
+        </section>
+
+        <section id="recipe-detail" style="display:none;">
+            <h2 id="recipe-title"></h2>
+            <img id="recipe-image" alt="Recipe Image">
+            <p id="recipe-description"></p>
+            <h3>Ingredients</h3>
+            <ul id="ingredients-list"></ul>
+            <h3>Instructions</h3>
+            <ol id="instructions-list"></ol>
+            <h3>Nutritional Information</h3>
+            <p id="nutritional-info"></p>
+            <p id="prep-time"></p>
+            <button id="save-recipe" style="display:none;">Save to Favorites</button>
+            <button id="back-to-search">Back to Search</button>
+        </section>
+
+        <section id="favorites">
+            <h2>Your Favorites</h2>
+            
+            <div id="favorites-list">
+                <p id="p1"><img id="img" src="https://www.google.com/imgres?q=recipe%20for%20pancakes&imgurl=https%3A%2F%2Fwww.allrecipes.com%2Fthmb%2FFE0PiuuR0Uh06uVh1c2AsKjRGbc%3D%2F1500x0%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2F21014-Good-old-Fashioned-Pancakes-mfs_002-0e249c95678f446291ebc9408ae64c05.jpg&imgrefurl=https%3A%2F%2Fwww.allrecipes.com%2Frecipe%2F21014%2Fgood-old-fashioned-pancakes%2F&docid=iG83bIIl5rfakM&tbnid=PJpCSQWEAjl4bM&vet=12ahUKEwinq4rftvmJAxVfafUHHYXwC7oQM3oECGMQAA..i&w=1500&h=1500&hcb=2&ved=2ahUKEwinq4rftvmJAxVfafUHHYXwC7oQM3oECGMQAA".jpg> 
+                    One of the most delicious Pancake recipe
+                </p>
+                <a href="/PancakeRecepie" class="btn1">Pancake</a>
+            </div>
+        </section>
+
+        <section id="meal-planning">
+            <h2>Meal Planning</h2>
+            <div id="meal-plan-list"></div>
+            <p id="total-nutrition">The following nutrition information is provided for two regular pancakes made with white flour (154g)1 with butter (1 teaspoon, unsalted)2 and syrup (1 tablespoon).3
+                USDA FoodData Central. Syrups, table blends, pancake.<br><br>
+                
+                
+                Calories: 430.8 <br>
+                Fat: 18.77g<br>
+                Sodium: 693.9mg<br>
+                Carbohydrates: 55.9g<br>
+                Fiber: .75g<br>
+                Sugars: 8.6g<br>
+                Protein: 8.64g</p>
+            <p id="total-prep-time">Prep Time: 10 Minutes.<br>
+                Cook Time: 4 minutes.<br>
+                Total Time: 14 minutes.<br>
+                Yeild: 4
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Finder</p>
+    </footer>
+
+    <script src="./jscript.js"></script>
+</body>
+</html>
